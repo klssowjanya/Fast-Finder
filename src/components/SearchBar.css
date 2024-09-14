@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    position: relative; /* Position relative for absolute positioning of the image */
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px 12px 40px; /* Add padding on the left for the search image */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/49/49116.png'); /* Background image */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position the image within the input */
+    background-size: 20px; /* Size of the search icon */
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Suggestions dropdown */
+.suggestions-list {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Country details display */
+.country-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.country-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.country-details p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.country-details strong {
+    color: #333;
+}
